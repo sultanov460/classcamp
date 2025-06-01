@@ -1,0 +1,19 @@
+.share__wrapper {
+  padding: 180px 75px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+
+  .share__wrapper--text {
+    max-width: 570px;
+
+    h1 {
+      @include setTitle();
+      padding-right: 70px;
+    }
+
+    p {
+      @include setParagraph();
+    }
+  }
+}
