@@ -1,0 +1,142 @@
+.trusted__wrapper {
+  padding: 136px 60px 160px;
+  .trusted__wrapper--text {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    text-align: center;
+    margin: 0 auto;
+    h1 {
+      max-width: fit-content;
+      margin: 0 auto;
+      padding: 0 30px;
+      font-weight: 400;
+      font-size: 61px;
+      line-height: 83.2px;
+      letter-spacing: 2.56px;
+      margin-bottom: 4px;
+    }
+
+    .line {
+      width: 120px;
+      height: 5px;
+      background-color: #ff4343;
+      margin: 0 auto;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 37.8px;
+      letter-spacing: 0.42px;
+      opacity: 0.5;
+    }
+  }
+
+  .trusted__wrapper--cards {
+    margin-top: 89px;
+    display: flex;
+    gap: 16px;
+
+    .wrapper__card {
+      position: relative;
+      border-radius: 12px;
+      width: 252px;
+      height: 452px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+
+      .wrapper__card--text {
+        padding: 270px 12px 50px;
+        z-index: 3;
+        h2 {
+          font-size: 29px;
+          font-weight: 400;
+          line-height: 34.8px;
+          letter-spacing: 0.42px;
+        }
+
+        h4 {
+          margin-top: 12px;
+          font-weight: 400;
+          font-size: 16px;
+          letter-spacing: 0.42px;
+        }
+
+        p {
+          margin-top: 2px;
+          font-size: 15px;
+          font-weight: 400;
+          opacity: 0.65;
+        }
+      }
+
+      &::before {
+        content: "";
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 40%,
+          rgba(0, 0, 0, 0.7) 100%
+        );
+      }
+    }
+
+    .alessandro-card {
+      background-image: url(../images/alessandro.png);
+    }
+
+    .ketlie-card {
+      background-image: url(../images/keltie.png);
+    }
+
+    .smoe-card {
+      background-image: url(../images/by-smoe.png);
+    }
+
+    .annika-card {
+      background-image: url(../images/annika.png);
+    }
+
+    .leo-card {
+      background-image: url(../images/leo.png);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .trusted__wrapper {
+    .trusted__wrapper--cards {
+      flex-wrap: wrap;
+      gap: 30px;
+      .wrapper__card {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .trusted__wrapper {
+    padding: 100px 30px;
+
+    .trusted__wrapper--text {
+      h1 {
+        font-size: 40px !important;
+        line-height: 60px !important;
+      }
+
+      p {
+        font-size: 20px !important;
+      }
+    }
+  }
+}

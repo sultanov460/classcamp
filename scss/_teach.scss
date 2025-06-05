@@ -1,0 +1,103 @@
+.teach__wrapper {
+  margin-top: 60px;
+  .teach__wrapper--teach {
+    margin: 0 auto;
+    padding: 66px 0;
+    background-color: #1d1b24;
+    width: 1120px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 63px;
+      font-weight: 400;
+      line-height: 91px;
+      letter-spacing: 2.1px;
+    }
+
+    p {
+      margin-top: 32px;
+      font-weight: 400;
+      font-size: 27px;
+      letter-spacing: 0.42px;
+      opacity: 0.7;
+    }
+
+    button {
+      margin: 0 auto;
+      width: 281px;
+      margin-top: 71px;
+      background-color: #ff4343;
+      padding: 16px 11px 23px 30px;
+      font-size: 23px;
+      font-weight: 400;
+      letter-spacing: 0.42px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #751e1e;
+      }
+    }
+  }
+
+  .teach__wrapper--lesson {
+    margin-top: -36px;
+    background-image: url(../images/teach-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 141px 0 193px;
+
+    h3 {
+      max-width: 700px;
+      font-size: 42px;
+      font-style: italic;
+      line-height: 48.4px;
+      letter-spacing: 0.42px;
+      font-weight: 700;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 14px;
+      font-weight: 400;
+      font-size: 23px;
+      letter-spacing: 0.42px;
+      opacity: 0.7;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1130px) {
+  .teach__wrapper {
+    .teach__wrapper--teach {
+      width: 95%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .teach__wrapper--teach {
+    padding: 40px 15px !important;
+    h1 {
+      white-space: nowrap;
+      font-size: 40px !important;
+    }
+
+    p {
+      font-size: 20px !important;
+      text-align: center;
+    }
+  }
+
+  .teach__wrapper--lesson {
+    h3 {
+      font-size: 30px !important;
+    }
+  }
+}
