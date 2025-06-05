@@ -1,5 +1,6 @@
 .trusted__wrapper {
-  padding: 136px 60px 160px;
+  padding-top: 130px;
+  padding-bottom: 160px;
   .trusted__wrapper--text {
     max-width: 600px;
     display: flex;
@@ -37,6 +38,7 @@
   .trusted__wrapper--cards {
     margin-top: 89px;
     display: flex;
+    justify-content: center;
     gap: 16px;
 
     .wrapper__card {
