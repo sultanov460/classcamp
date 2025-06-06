@@ -1,5 +1,5 @@
 .enrich__wrapper {
-  padding: 87.35px 75px 179px;
+  padding: 87.35px 0px 179px;
   display: flex;
   align-items: center;
   gap: 100px;
@@ -30,7 +30,7 @@
 
 @media (max-width: 650px) {
   .enrich__wrapper {
-    padding: 60px 30px 100px;
+    padding: 60px 0 100px;
 
     img {
       width: 100%;

@@ -43,3 +43,9 @@ body {
 @import "./teach";
 @import "./courses";
 @import "./footer";
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 15px;
+  }
+}
